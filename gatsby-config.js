@@ -13,5 +13,14 @@ module.exports = {
     title: `CooolTiger's Gallery`,
     author: 'Danny He, Grant He'
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`, // 名称，可以用来过滤
+        path: `${__dirname}/src/content`, // 文件路径
+      },
+    },
+    'gatsby-transformer-remark',
+  ],
 }

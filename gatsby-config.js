@@ -8,5 +8,10 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  /* Your site config here */
+  siteMetadata: {
+    title: `CooolTiger's Gallery`,
+    author: 'Danny He, Grant He'
+  },
   plugins: [],
 }
